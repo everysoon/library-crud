@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    username: root
+    password: alstjsl1!
+    url: jdbc:mysql://localhost:3306/getinline?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    config:
+      activate:
+        on-profile: dev
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 1012
+---
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      hbm2ddl.auto: create
+#      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  config:
+    activate:
+      on-profile: local
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+server:
+  port: 1012
