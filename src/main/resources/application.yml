@@ -19,7 +19,7 @@ spring:
 
 
 server:
-  port: 1012
+  port: 6001
 ---
 spring:
   datasource:
