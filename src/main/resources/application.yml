@@ -1,7 +1,7 @@
 spring:
   datasource:
-    username: root
-    password: Alstjsl1269!
+    username: soon
+    password: Alstjsl9916!
     url: jdbc:mysql://localhost:3306/library?serverTimezone=Asia/Seoul&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
