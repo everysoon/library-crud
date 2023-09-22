@@ -2,7 +2,7 @@ spring:
   datasource:
     username: soon
     password: Alstjsl9916!
-    url: jdbc:mysql://localhost:3306/library?serverTimezone=Asia/Seoul&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://ec2-13-209-10-188.ap-northeast-2.compute.amazonaws.com:3306/library?serverTimezone=Asia/Seoul&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
